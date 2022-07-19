@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Location de voiture</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="app.js" defer></script>
+
+</head>
+
+<body>
+<!--navburger-->
+  <header class="test-header">
+    <nav class="navbar navbar-light bg-opacity">
+      <div class="container-fluid">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-light shadow-3 p-4">
+        <ul class="d-flex flex-column">
+          <li>Louer un véhicule</li>
+          <li>Louer un utilitaire</li>
+          <li>Réserver un chauffeur</li>
+          <li>Nos Agence</li>
+          <li>Compte</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 ">
+          <h1 class="text-light text-center display-2 fwtitle">Bienvenue à bord</h1>
+          <h3 class="text-light text-center fwtitle">Location de voiture 24h/24 7j/7</h3>
+        </div>
+      </div>
+    </div>
+    <!--form-->
+    <form action="" class="col-9 p-2 border border-2 form-picker" style="background-color: rgba(101, 85, 93, 0.12);">
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Adresse</option>
+              <option>Marseille</option>
+              <option>Paris</option>
+              <option>Lyon</option>
+              <option>Bordeaux</option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+        </div>
+
+        <div class="col">
+          <input type="date" id="end" name="trip-end" value="2022-07-19" min="2018-01-01" max="2018-12-31">
+        </div>
+        <div class="col">
+          <button class="btn btn-success" type="submit">Valider ma recherche</button>
+        </div>
+      </div>
+    </form>
+
+  </header>
+
+<div class="container"><button id="ddbtn" class="btn-sm dropdown-toggle rounded border border-dark p-2 flex-reverse" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  Prix Croissant</button>
+  <h4 class="justify-content-between"> 17 Résultats</h4>
+</div>
+  
+
+
+
+<!--caroussel-->
+
+  <div class="container">
+    <div class="card mb-3 border-0 p-5">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide bg-opacity m-auto">
+                <img src="vehicule1.png" alt="">
+              </div>
+              <div class="swiper-slide bg-opacity">
+                <img src="vehicule1.png" alt="">
+              </div>
+              <div class="swiper-slide bg-opacity">
+                <img src="vehicule1.png" alt="">
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev mr-2"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title mb-4">Peugeot 208</h5>
+            <p class="card-text mb-4">Diesel, 5 portes, GPS, auto radio, Forfait 1000km (0.5/km supplémentaire)</p>
+              <p>999€ - Agence de Paris.</p>
+            <button class="btn btn-success">Réserver et Payer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 border-0 p-5">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide bg-opacity">
+                <img src="vehicule2.png" alt="">
+              </div>
+              <div class="swiper-slide bg-opacity">
+                <img src="vehicule2.png" alt="">
+              </div>
+              <div class="swiper-slide bg-opacity">
+                <img src="vehicule2.png" alt="">
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev mr-2"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title mb-4">Ford Focus</h5>
+            <p class="card-text mb-4">Diesel, 5 portes, GPS, auto radio, Forfait 1000km (0.5/km supplémentaire)</p>
+            <p>999€ - Agence de Paris.</p>
+            <button class="btn btn-success">Réserver et Payer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 border-0 p-5">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide bg-opacity">
+                <img src="vehicule3.png" alt="">
+              </div>
+              <div class="swiper-slide bg-opacity">
+                <img src="vehicule3.png" alt="">
+              </div>
+              <div class="swiper-slide bg-opacity">
+                <img src="vehicule3.png" alt="">
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev mr-2"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title mb-4">Audi A1</h5>
+            <p class="card-text mb-4">Diesel, 5 portes, GPS, auto radio, Forfait 1000km (0.5/km supplémentaire)</p>
+              <P>999€ - Agence de Paris.</p>
+            <button class="btn btn-success">Réserver et Payer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 border-0 p-5">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide bg-opacity">
+                <img src="vehicule4.png" alt="">
+              </div>
+              <div class="swiper-slide bg-opacity">
+                <img src="vehicule4.png" alt="">
+              </div>
+              <div class="swiper-slide bg-opacity">
+                <img src="vehicule4.png" alt="">
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev mr-2"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title mb-4">Opel Mokka</h5>
+            <p class="card-text mb-4">Diesel, 5 portes, GPS, auto radio, Forfait 1000km (0.5/km supplémentaire)</p>
+             <P>999€ - Agence de Paris.</p>
+            <button class="btn btn-success">Réserver et Payer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<footer>
+<div class="container d-flex justify-content-around">
+  <img src="agence.jpg" alt="">
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem delectus eveniet incidunt deserunt. Quae iure saepe cumque repudiandae? Soluta blanditiis quam minima facilis necessitatibus eum aut placeat fugit id dignissimos?</p>
+
+</div>
+ 
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"
+    integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
